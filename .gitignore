@@ -1,1 +1,3 @@
 logs/
+dags/__pycache__/dag_wiki.cpython-310.pyc
+dags/__pycache__/taskflow_api_example.cpython-310.pyc
