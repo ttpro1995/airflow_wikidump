@@ -38,3 +38,8 @@ Then
 ```
 airflow scheduler
 ```
+
+
+# Free mysql
+
+https://console.aiven.io/

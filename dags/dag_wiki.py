@@ -21,7 +21,7 @@ def upsert_mysql(timestamp: int, article: str, views: int):
 
     # Define the SQL query for upsert
     sql = """
-    INSERT INTO your_table (timestamp, article, views)
+    INSERT INTO pageview (timestamp, article, views)
     VALUES (%s, %s, %s)
     ON DUPLICATE KEY UPDATE views = views + %s
     """

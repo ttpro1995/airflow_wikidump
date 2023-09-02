@@ -1,5 +1,6 @@
 CREATE TABLE `pageview` (
-  `timestamp` integer PRIMARY KEY,
+  `timestamp` integer,
   `article` varchar(255),
-  `views` integer
+  `views` integer,
+  PRIMARY KEY (`timestamp`, `article`)
 );
