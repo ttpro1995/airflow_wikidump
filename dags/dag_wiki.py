@@ -17,10 +17,11 @@ def upsert_mysql(timestamp: int, article: str, views: int):
     # )
 
     connection = mysql.connector.connect(
-        host="localhost",
+        host="127.0.0.1",
+        port="7777",
         user="root",
         password="meowmeow",
-        database="msql"
+        database="defaultdb"
     )
 
     # Create a cursor object to execute SQL queries

@@ -19,7 +19,8 @@ def upsert_mysql(timestamp: int, article: str, views: int):
     # )
 
     connection = mysql.connector.connect(
-        host="localhost:7777",
+        host="127.0.0.1",
+        port="7777",
         user="root",
         password="meowmeow",
         database="defaultdb"
