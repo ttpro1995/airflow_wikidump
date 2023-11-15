@@ -9,11 +9,18 @@ import mysql.connector
 
 def upsert_mysql(timestamp: int, article: str, views: int):
     # Establish a connection to MySQL
+    # connection = mysql.connector.connect(
+    #     host="db4free.net",
+    #     user="hahattpro",
+    #     password="MiFHCci@4Reb3C4",
+    #     database="hahattpro"
+    # )
+
     connection = mysql.connector.connect(
-        host="db4free.net",
-        user="hahattpro",
-        password="MiFHCci@4Reb3C4",
-        database="hahattpro"
+        host="localhost",
+        user="root",
+        password="meowmeow",
+        database="msql"
     )
 
     # Create a cursor object to execute SQL queries

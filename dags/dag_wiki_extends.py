@@ -10,15 +10,20 @@ def upsert_mysql(timestamp: int, article: str, views: int):
     # Establish a connection to MySQL
     import mysql
     import mysql.connector
-    connection = mysql.connector.connect(
-        host="hahattpro-dev-mysql-hahattpro-041c.aivencloud.com",
-        port="18357",
-        user="avnadmin",
-        password="AVNS_XmS6WtCl2BzqZCOF6Dn",
-        database="defaultdb"
-        
-    )
+    # connection = mysql.connector.connect(
+    #     host="hahattpro-dev-mysql-hahattpro-041c.aivencloud.com",
+    #     port="18357",
+    #     user="avnadmin",
+    #     password="AVNS_XmS6WtCl2BzqZCOF6Dn",
+    #     database="defaultdb" 
+    # )
 
+    connection = mysql.connector.connect(
+        host="localhost:7777",
+        user="root",
+        password="meowmeow",
+        database="defaultdb"
+    )
 
 
     # Create a cursor object to execute SQL queries
@@ -94,7 +99,7 @@ def upsert_postgresql(timestamp: int, article: str, views: int):
     #schedule=None,
     schedule_interval='@daily',
     start_date=pendulum.datetime(2023, 3, 1, tz="UTC"),
-    end_date=pendulum.datetime(2023, 4, 1, tz="UTC"),
+    #end_date=pendulum.datetime(2023, 4, 1, tz="UTC"),
     catchup=True,
     tags=["wiki"]
 )

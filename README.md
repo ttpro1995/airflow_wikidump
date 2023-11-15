@@ -1,3 +1,7 @@
+# Where is repo ?
+
+https://github.com/ttpro1995/airflow_wikidump
+
 # Run airflow in offline mode
 
 ## First time setup
@@ -43,3 +47,9 @@ airflow scheduler
 # Free mysql
 
 https://console.aiven.io/
+
+# docker sql
+
+```
+sudo docker run -d -p 7777:3306 --name airflow_wikidump_sqlserver -e MYSQL_ROOT_PASSWORD=meowmeow mysql:8.2
+```
